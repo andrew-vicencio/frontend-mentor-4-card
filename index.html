@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+    </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ['Poppins', 'sans-serif']
+            },
+            colors: {
+              'fm-red': 'hsl(0, 78%, 62%)',
+              'fm-cyan': 'hsl(180, 62%, 55%)',
+              'fm-orange': 'hsl(34, 97%, 64%)',
+              'fm-blue': 'hsl(212, 86%, 64%)',
+              'fm-dark-blue': 'hsl(234, 12%, 34%)',
+              'fm-grey-blue': 'hsl(229, 6%, 66%)',
+              'fm-light-grey': 'hsl(0, 0%, 98%)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-poppins leading-[1.7]">
+    <header class="text-center my-24 px-8 md:px-0">
+      <div class="wrapper wrapper--narrow mx-auto max-w-[550px] flex flex-col gap-8">
+        <h1 class="font-poppins leading-[1.2] text-4xl font-extralight">
+          Reliable, efficient delivery <br />
+          <span class="font-semibold">Powered by Technology</span>
+        </h1>
+        <p class="font-extralight tracking-wider">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful 
+        </p>
+      </div>
+    </header>
+    <main class="mx-8 xl:mx-0">
+      <div class="wrapper mx-auto max-w-[1100px]">
+        <!-- <div class="layout-grid grid grid-cols-3"></div> -->
+        <div class="layout-grid grid md:flex gap-8">
+          <div class="column md:flex-1 md:flex md:flex-col md:justify-center md:gap-8">
+            <div class="card p-8 rounded-lg shadow-lg border-t-4 border-fm-cyan">
+              <div class="card-content relative ">
+                <h2 class="text-lg font-semibold">
+                  Supervisor
+                </h2>
+                <p class="font-extralight py-4">Monitors activity to identify project roadblocks</p>
+                <img class="ml-auto mt-8" src="images/icon-supervisor.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="column flex-1 flex flex-col justify-center gap-8">
+            <div class="card p-8 rounded-lg shadow-lg border-t-4 border-fm-red">
+              <div class="card-content relative ">
+                <h2 class="text-lg font-semibold">
+                  Team Builder
+                </h2>
+                <p class="font-extralight py-4">Scans our talent network to create the optimal team for your project</p>
+                <img class="ml-auto mt-8" src="images/icon-team-builder.svg" alt="">
+              </div>
+            </div>
+            <div class="card p-8 rounded-lg shadow-lg border-t-4 border-fm-orange">
+              <div class="card-content relative ">
+                <h2 class="text-lg font-semibold">
+                  Karma
+                </h2>
+                <p class="font-extralight py-4">Regularly evaluates our talent to ensure quality</p>
+                <img class="ml-auto mt-8" src="images/icon-karma.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="column flex-1 flex flex-col justify-center gap-8">
+            <div class="card p-8 rounded-lg shadow-lg border-t-4 border-fm-blue">
+              <div class="card-content relative ">
+                <h2 class="text-lg font-semibold">
+                  Calculator
+                </h2>
+                <p class="font-extralight py-4">
+                  Uses data from past projects to provide better delivery estimates
+                </p>
+                <img class="ml-auto mt-8" src="images/icon-calculator.svg" alt="">
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-8">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://andrewvicencio.ca">Andrew Vicencio</a>.
+      </p>
+    </footer>
+  </body>
+</html>
